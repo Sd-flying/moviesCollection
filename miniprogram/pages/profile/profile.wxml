@@ -1,0 +1,13 @@
+
+<view class="profiles">
+  <image class="info-images" src="{{userInfo.avatarUrl}}"></image>
+  <view>昵称：
+        <text>{{userInfo.nickName}}</text>
+  </view>
+  <view>居住地：
+        <text>{{userInfo.country}}-{{userInfo.province}}-{{userInfo.city}}</text>
+  </view>
+</view>
+
+
+<van-button class="myBtn" size="large" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</van-button>
